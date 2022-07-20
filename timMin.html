@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timMin(arr){
+        if (arr.length==0){
+            return 'Mang rong';
+        }
+        let min =arr[0];
+        for (let i = 1; i <arr.length ; i++) {
+            if (min>arr[i]){
+                min=arr[i];
+            }
+        }
+        return min;
+    }
+let arr1=[3,5,1,8,-3,7,8]
+    let min=timMin(arr1)
+    alert(min)
+     arr2=[7,12,6,9,20,56,89]
+    min=timMin(arr2)
+    alert(min)
+    arr3=[]
+    min=timMin(arr3)
+    alert(min)
+    arr4=[0,0,0,0,0,0]
+    min=timMin(arr4)
+    alert(min)
+</script>
+</body>
+</html>
